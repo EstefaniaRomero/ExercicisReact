@@ -1,5 +1,5 @@
 import "./Photo.css";
-import BigPhoto from "./components/bigPhoto/BigPhoto";
+import BigPhoto from "../bigPhoto/BigPhoto";
 
 function Photo() {
   const photos = [
@@ -15,10 +15,7 @@ function Photo() {
       <h1>Graella de Fotos</h1>
       <div className="div_photo">
         {photos.map((photo, index) => (
-          /*<div>
-            <img key={index} src={photo} alt="" width="200px" height="150px" />
-          </div>*/
-          <BigPhoto />
+          <BigPhoto src={photo} key={index} />
         ))}
       </div>
     </>

@@ -1,10 +1,10 @@
 import "./Home.css";
-import Photo from "../components/photo/Photo";
+import Display from "../exercicis/Comptador/components/display/Display";
 
 function Home() {
   return (
     <>
-      <Photo />
+      <Display />
     </>
   );
 }
