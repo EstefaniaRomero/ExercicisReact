@@ -12,11 +12,15 @@ function Photo() {
   ];
   return (
     <>
-      <h1>Graella de Fotos</h1>
-      <div className="div_photo">
-        {photos.map((photo, index) => (
-          <BigPhoto src={photo} key={index} />
-        ))}
+      <div className="div_h1">
+        <h1>Graella de Fotos</h1>
+      </div>
+      <div className="div_container">
+        <div className="div_photo">
+          {photos.map((photo, index) => (
+            <BigPhoto src={photo} key={index} />
+          ))}
+        </div>
       </div>
     </>
   );
